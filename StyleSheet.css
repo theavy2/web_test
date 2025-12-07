@@ -1,0 +1,242 @@
+* {  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    width: 100%;
+}
+
+/* Header */
+header {
+    background-color: rgb(159, 109, 66);
+    padding: 20px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 25px;
+}
+
+li a:hover {
+    color: black;
+}
+
+/* Buttons */
+button {
+    width: 90px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #373737;
+}
+
+/* ------------------------------ */
+/*          HERO SECTION          */
+/* ------------------------------ */
+
+.hero-section {
+    min-height: 100vh;
+    background-color: bisque;
+    padding: 0 9%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Left text */
+.section-content .left {
+    flex: 1;
+}
+
+.section-content .left h1 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.section-content .left p {
+    font-size: 18px;
+    color: black;
+}
+
+/* Right image */
+.section-content .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 80px;
+}
+
+.section-content .right img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ------------------------------ */
+/*             FOOTER             */
+/* ------------------------------ */
+
+.footer {
+    background: #3d2b1f;
+    padding: 40px 20px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.footer .box h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer .box a {
+    display: block;
+    color: #ddd;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.footer .box a:hover {
+    color: #fff;
+}
+
+/* Social */
+.share {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.share a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Credit */
+.credit {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffd699;
+}
+
+
+/*card*/
+/* Fix card size */
+.menu-card {
+    height: 270px;            /* កំណត់កម្ពស់ស្មើគ្នា */
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Fix image size */
+.menu-card img {
+    height: 140px;            /* ទំហំរូបភាពស្មើគ្នា */
+    object-fit: cover;        /* កាត់ឲ្យស្អាត */
+}
+
+/* Center text & space correctly */
+.menu-card .card-body {
+    padding: 10px;
+}
+
+.menu-card .card-title {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-card .card-text {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Button fix */
+.menu-card .btn {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+/* Gallery Section */
+/* Gallery Section */
+.gallery-section {
+    text-align: center;
+    padding: 60px 0;  /* spacing ពីលើ និងក្រោម */
+}
+
+/* Center grid */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* រូបធំជាង */
+    justify-items: center;      
+    gap: 40px;               /* spacing រវាងរូប */
+    width: 100%;
+    max-width: 1400px;       /* center container */
+    margin: 0 auto;
+}
+
+/* Image styling */
+.gallery-image {
+    width: 300px;               /* ទំហំធំ */
+    height: 250px;              /* ទំហំធំ */
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    margin-bottom: 20px;        /* spacing រវាងរូប និងអក្សរ */
+}
+
+/* Title below image */
+.gallery-item-title {
+    font-size: 20px;            /* អក្សរធំ */
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
